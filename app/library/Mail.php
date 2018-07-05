@@ -18,11 +18,11 @@ class Mail
 		$mail->SMTPAuth = true;
 		$mail->SMTPSecure = 'tls';
 
-		$mail->Username = 'alternarija@gmail.com';
-		$mail->Password = 'jebemtimaterglupu2007';
+		$mail->Username = '';
+		$mail->Password = '';
 
-		$mail->setFrom("alternarija@gmail.com","CO B");
-		$mail->addReplyTo("alternarija@gmail.com","sanja");
+		$mail->setFrom("");
+		$mail->addReplyTo("");
 		$mail->addAddress($to);
 		$mail->Subject = $subject;
 		$mail->isHTML(true);
